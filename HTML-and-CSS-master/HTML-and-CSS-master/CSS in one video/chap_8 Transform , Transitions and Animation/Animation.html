@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+
+        } */
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+        }
+        .box{
+            width: 300px;
+            background-color: red;
+            color: white;
+            display: flex;
+            justify-content: center;
+            /* animation-name: WidthAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; */
+            animation: WidthAnimation 3s ease-in-out 0.5s 3 alternate-reverse;
+        }
+        img{
+            animation: WidthAnimation2 3s ease-in-out 0.5s 3 alternate;
+            
+        }
+
+        @keyframes WidthAnimation {
+            from{
+                width: 10px;
+                height: 20px;
+                rotate: 0deg;
+            }
+            to{
+                width: 100px;
+                height: 200px;
+                rotate: 90deg;
+            }
+        }
+        @keyframes WidthAnimation2 {
+            0%{
+                width: 100px;
+                height: 200px;
+                rotate: 0deg;
+            }
+            50%{
+                width: 200px;
+                height: 400px;
+                rotate: 180deg;
+            }
+            100%{
+                width: 400px;
+                height: 800px;
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <img src="/CSS in one video/chap_8 Transform , Transitions and Animation/download.jpg" alt="">
+    </div>
+</body>
+</html>

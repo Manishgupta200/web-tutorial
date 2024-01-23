@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    height: 70px;
+    width: 100vw;
+}
+.slidebar{
+    background-color: blueviolet;
+    height: 500px;
+    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+.box{
+    background-color: yellowgreen;
+    width: 100vw;
+    height: 60vh;
+}
+#img1{
+    
+    transform: translate(-36vw);
+    animation: slide1 3s ease-in-out 2s infinite ;
+}
+#img2{
+    
+    transform: translateX(0vw);
+    animation: slide2 3s ease-in-out 2s infinite ;
+}
+#img3{
+    
+    transform: translateX(36vw);
+}
+@keyframes slide1 {
+    0%{
+        transform: translateX(-36vw);
+    }
+    100%{
+        transform: translateX(42vw);
+    }
+}
+@keyframes slide2 {
+    0%{
+        transform: translateX(0vw);
+    }
+    100%{
+        transform: translateX(85vw);
+    }
+}

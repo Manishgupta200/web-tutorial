@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+#bulbon{
+    
+    display: none;
+}
+#zombie{
+    visibility: hidden;
+}
+h2{
+    color: green;
+    text-align: center;
+}

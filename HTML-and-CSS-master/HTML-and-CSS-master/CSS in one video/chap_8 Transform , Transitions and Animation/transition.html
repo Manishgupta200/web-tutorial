@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 240px;
+            height: 446px;
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out; */
+            /* transition-delay: 2s; */
+            transition: width 4s ease-in-out , height 2s ease-out;
+        }
+
+        /* img:hover{
+            width: 720px;
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="/CSS in one video/chap_8 Transform , Transitions and Animation/download.jpg" alt="">
+            <button id="btn">
+                Toggle
+            </button>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width = "246px"
+    myImage.style.height = "246px"
+    
+    btn.addEventListener("click", () => {
+        myImage.style.height = "446px"
+
+        if (myImage.style.width === "646px") {
+            myImage.style.width = "246px"
+        }
+        else if (myImage.style.width === "246px") {
+            myImage.style.width = "646px"
+        }
+
+    })
+</script>
+
+</html>

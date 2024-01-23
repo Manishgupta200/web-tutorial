@@ -1,0 +1,15 @@
+.container{
+    color: rgba(23, 7, 253, 0.986);
+    background: rgba(179, 255, 0, 0.781);
+    height: 154px;
+}
+.con2{
+    background: blue;
+    color: white;
+    /* color: hsl(8, 90%, 63%); */
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}

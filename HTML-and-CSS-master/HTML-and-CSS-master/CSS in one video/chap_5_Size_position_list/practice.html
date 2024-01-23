@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive navigation bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            background-color: black;
+            width: 100vw;
+            height: 70px;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        li {
+            display: inline-block;
+            padding: 22px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #chat {
+            /* background-color: greenyellow; */
+            /* border: 1px solid red; */
+            width: 20vw;
+            margin: auto;
+            position: fixed;
+            right: 5vw;
+            bottom: 22px;
+        }
+
+        #btn {
+            position: fixed;
+            right: 10vw;
+            bottom: 0;
+        }
+
+        @media (max-width: 600px) { 
+            #chat {
+            /* background-color: greenyellow; */
+            /* border: 1px solid red; */
+            width: 41vw;
+            margin: auto;
+            position: fixed;
+            right: 5vw;
+            bottom: 22px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore beatae quibusdam, consequuntur culpa,
+            quo reiciendis iure velit odit recusandae ratione. Consectetur corporis dolore iusto molestiae fuga ipsam?
+            Minus, veniam culpa. Sapiente nesciunt similique fuga quae molestiae tempora quibusdam aliquam, cumque, sit
+            quis quasi est iure veniam beatae odio, voluptatibus perferendis debitis omnis pariatur magni?
+        </div>
+        <form action="nav.php">
+
+            <div class="text">
+                <textarea name="chat" id="chat" cols="30" rows="10" placeholder="Text here"></textarea>
+            </div>
+            <div id="btn">
+                <input type="submit" value="Submit">
+                <input type="reset" value="reset now">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

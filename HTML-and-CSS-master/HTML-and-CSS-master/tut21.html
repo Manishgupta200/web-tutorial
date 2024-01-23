@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .container{
+            border: 3px solid rgb(3, 117, 117);
+            width: 900px;
+            margin:50px auto;
+            background-color: rgb(223, 210, 162);
+        }
+        .item{
+            border: 3px solid rgb(252, 74, 4);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: #abd3f1;
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+
+        #computer{
+            float: right;
+            width: 48%;
+        }
+
+        #stationary{
+            /* float: left; */
+            /* clear: left; */
+            clear: both;
+            width: 100%;
+        }
+        p,h3{
+            text-align: justify;
+        }
+        h1{
+            margin: 23px auto;
+            width: 450px;
+            text-align: center;
+        }
+
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">
+                Apple,Mango,Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque expedita, itaque voluptates quis nostrum odio ullam perspiciatis. Amet maxime, nihil ullam ipsam repellendus tempora, impedit esse fuga nam nisi qui ratione enim fugit. etc Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio labore id quae earum libero enim aliquam placeat illum molestias numquam voluptate, quod ex harum, odio, quaerat possimus eaque ut sint repellendus cupiditate inventore rem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit inventore accusamus atque? Doloremque nesciunt commodi, labore doloribus optio quae dolores!
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">
+                Apple,HP,Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat adipisci ducimus aspernatur necessitatibus ipsam, minima possimus iure mollitia omnis dolore totam officiis fugiat perferendis voluptatum voluptate animi voluptas nemo. Nesciunt ad blanditiis non ipsum autem rerum. Ex minus vero dolores soluta voluptates hic vel maiores. etc. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit reprehenderit itaque quia consectetur odit fuga expedita suscipit minus quidem molestiae asperiores impedit, earum accusantium eum maxime excepturi, vero placeat ducimus! Labore ullam nam harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis cumque voluptates delectus aliquam ratione repellendus excepturi! Sapiente itaque eveniet, quo fuga nisi reiciendis, tenetur et ab asperiores maiores enim.
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>staionary</h3>
+            <p id="staionarypara" class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, itaque illum ad nemo animi inventore ipsam deserunt voluptas voluptatem provident sit similique deleniti. Dolorem optio illum sed, neque, repellat pariatur quis tempore nulla expedita, adipisci deleniti? Officia maxime voluptatem aliquid. etc. 
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking Form</title>
+    <style>
+        main{
+            background-color: aqua;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* margin-left: 50px; */
+        }
+        header{
+            background-color: burlywood;
+        }
+        body{
+            background-color: rgb(238, 226, 53);
+        }
+        .form{
+            margin-left: 40px;
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ticket Booking Form :</h1>
+        <hr>
+    </header>
+    <main>
+        <br>
+        <div class="form">
+            <form action="form.php">
+                <span>Name : </span>
+                <input type="text" placeholder="Enter your name "><br><br>
+                <span>Address :</span>
+                <input type="text" placeholder="Address"><br><br>
+                <span>Ph. Number :</span>
+                <input type="number" name="number" id="number" placeholder="Ph. Number"><br><br>
+                <span>E-mail :</span>
+                <input type="email" name="mail" id="mail" placeholder="email@gmail.com"><br><br>
+                <div>
+                    D.O.B : <input type="date" name="D.O.B">
+                </div>
+                <br>
+                <div>
+                    Gender : 
+                    <label for="male"> 
+                        <input type="radio" value="male" name="mygender" id="male">Male
+                    </label> 
+                    <label for="female">
+                        <input type="radio" value="female" id="female"
+                        name="mygender">Female 
+                    </label>
+                    <label for="other">
+                       <input type="radio" value="other" id="other"
+                        name="mygender">other 
+                    </label>
+                </div>
+                <br>
+                <hr>
+                <div>
+                    Ar you eligible? : <input type="checkbox" name="check" checked>
+
+                </div>
+                <br>
+                <span>How did you hear about us? </span>
+                <select name="linkedvia" id="linkedvia">
+                    <option value="nothing">Select your option</option>
+                    <option value="Our website">Our website</option>
+                    <option value="facebook">facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="linked in">linked in</option>
+                </select>
+                <br><br>
+
+                <span>Will you be willing to recommend us?</span>
+                <label for="feedbackYes">
+                    <input type="radio" value="feedbackYes" name="feedback" id="feedbackYes">YES
+                </label>
+                <label for="feedbackNo">
+                    <input type="radio" value="feedbackNo" name="feedback" id="feedbackNo">NO
+                </label>
+                <br><br>
+
+                <textarea name="feedbackWrite" id="feedback" cols="30" rows="10" placeholder="feedback"></textarea>
+
+                <br><br>
+                <div>
+                    <input type="submit" name="Submit now">
+                    <input type="reset" value="reset now">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

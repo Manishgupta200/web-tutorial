@@ -1,0 +1,19 @@
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 15vh; */
+}
+.btn{
+    width: 88px;
+    height: 60%;
+    background-color: #2874f0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.text-center{
+    text-align: center;
+    font-size: 15px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            background-color: red;
+            animation: progressBar 3s ease-in-out 1 normal;
+            /* visibility: hidden; */
+            /* width: 100vw;
+            height: 2px; */
+            /* transition: width 3s ease-in-out; */
+        }
+        @keyframes progressBar {
+            from{
+                width:0px;
+                height: 2px;
+                /* background-color: red; */
+                /* visibility: visible; */
+            }
+            to{
+                width:100vw;
+                height: 2px;
+                /* border-color: black; */
+                /* visibility:collapse; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box"></div>
+        <!-- <button id="btn">click</button> -->
+    </div>
+</body>
+<!-- <script>
+    box.style.width = "0vw"
+    box.style.height = "2spx"
+    
+    btn.addEventListener("click", () => {
+        box.style.height = "2px"
+
+        if (box.style.width === "0vw") {
+            box.style.width = "100vw"
+        }
+        else if (box.style.width === "100vw") {
+            box.style.width = "0vw"
+        }
+        
+
+    }) -->
+</script>
+
+</html>

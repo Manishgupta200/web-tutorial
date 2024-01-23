@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin collapse and Box sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            background-color: yellowgreen;
+            margin: 20px;
+            padding: 5px;
+            border: 2px solid blue;
+        }
+        .box2{
+            background-color: rgb(51, 248, 199);
+            margin: 40px;
+            padding: 5px;
+            border: 2px solid rgb(255, 0, 191);
+        }
+        .box3{
+            background-color: rgb(255, 60, 0);
+            border: 5px solid black;
+            padding: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit animi officiis molestiae? Laudantium ipsa quibusdam consequatur odio quia dicta omnis reiciendis ad, sint, culpa commodi cumque distinctio earum repudiandae placeat magni! Nesciunt perspiciatis consectetur blanditiis!
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur a ad aliquid eum architecto, dolorem amet rem quaerat pariatur voluptatum nihil maiores.
+
+        <div class="box3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, unde.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex navigation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            background-color: black;
+            /* color: white; */
+            /* flex-wrap: wrap; */
+            justify-content: flex-start;
+            align-content: center;
+            width: 100vw;
+            height: 100px;
+        }
+        li{
+            display: inline-block;
+            margin: 2.6em 5vw;
+
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .img{
+            margin-left: 10vw;
+            margin-top: 2em;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 15vh;
+        }
+        .box1{
+            background-color: yellow;
+            height: 35vh;
+            width: 30vw;
+            margin-right:25vw;
+        }
+        .box2{
+            background-color: rgb(71, 245, 56);
+            height: 35vh;
+            width: 30vw;
+            /* position: relative;
+            right: 15px; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="img">
+                <img src="myimg.jpeg" alt="Error" width="25px">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </main>
+</body>
+</html>

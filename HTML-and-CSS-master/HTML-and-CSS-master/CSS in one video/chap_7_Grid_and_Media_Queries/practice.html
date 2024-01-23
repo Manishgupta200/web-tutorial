@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: 50px auto;
+            /* grid-template-rows: auto auto auto; */
+            align-content: center;
+            height: 75px;
+        }
+        .img{
+            margin-left: 20px;
+
+        }
+        ul{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: 109px 109px auto;
+            /* grid-template-rows: auto auto auto; */
+            align-content: center;
+            
+        }
+        li{
+            margin-left: 42px;
+            text-transform: none;
+            display: inline-block;
+        }
+        body{
+            background-color: magenta;
+        }
+        @media only screen and (max-width : 450px){
+            nav{
+                grid-template-columns: 45px auto;
+                /* align-content: center; */
+            }
+            ul{
+                grid-template-columns: 90px 90px auto;
+            }
+            li{
+                margin-left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="img">
+                <img src="/CSS in one video/chap_6_Flexbox/myimg.jpeg" alt="Error" width="25px">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>
