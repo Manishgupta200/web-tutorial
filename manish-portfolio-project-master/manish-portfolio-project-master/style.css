@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card-text {
+    font-size: 18px;
+}
+
+.icon {
+    width: 50px;
+}
+
+div#container {
+    min-height: 74vh;
+    width: 100%;
+    background-image: url("img/bg-image.gif");
+    padding: 0;
+    margin: 0;
+}
+
+div#row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    min-height: 74vh;
+    margin: 0 auto;
+}
+
+div#col {
+    min-height: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+.maindiv {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+
+.text {
+    padding: 8px;
+    background: url("https://media.giphy.com/media/4H3Ii5eLChYul9p7NL/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    color: #00000047;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+.about-style {
+    padding: 10px;
+    font-weight: 800;
+}
+
+.about-sec-style {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+i.link {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.manish {
+    margin: 10px;
+}
+
+@media screen and (max-width:780px) {
+    div#row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .text {
+        font-size: 35px;
+    }
+
+    .icon-container i.link {
+        width: 100%;
+    }
+
+    .icon-container {
+        display: grid;
+        grid-auto-flow: column;
+    }
+}
+
+div#container2 {
+    min-height: 74vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#row2 {
+    width: 100%;
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    min-height: 74vh;
+    margin: 0 auto;
+}
+
+.about2 {
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+.about-style2 {
+    width: 100%;
+}
+
+.about-style2 span {
+    color: rgb(45, 115, 115);
+}
+
+@media screen and (max-width:780px) {
+    div#row2 {
+        grid-template-columns: 1fr;
+    }
+}
